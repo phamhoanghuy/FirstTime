@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-
+    <?php echo "hello world!"; ?>
 @endsection
 
 @section('footer')
