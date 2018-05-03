@@ -1,7 +1,7 @@
 <div class="tab-content row animated fadeInRightBig">
-    <div id="home" class="tab-pane fade in active">
+    <div id="tab1" class="tab-pane fade in active">
         <div class="col-md-6 col-lg-6 col-xl-6">
-            <img src="{{ asset('images/test 4.jpg') }}" alt="">
+            <img src="{{ asset('images/slider_01.png') }}" alt="">
         </div>
         <div class="col-md-6 col-lg-6 col-xl-6">
             <h3 class="tab-content-title">Thiết kế Quảng Cáo</h3>
@@ -10,9 +10,9 @@
             <a href="#" class="btn tab-content-button">XEM CHI TIẾT</a>
         </div>
     </div>
-    <div id="menu1" class="tab-pane fade">
+    <div id="tab2" class="tab-pane fade">
         <div class="col-md-6 col-lg-6 col-xl-6">
-            <img src="{{ asset('images/test 3.jpg') }}" alt="">
+            <img src="{{ asset('images/slider_02.png') }}" alt="">
         </div>
         <div class="col-md-6 col-lg-6 col-xl-6">
             <h3 class="tab-content-title">In ấn mọi chất liệu</h3>
@@ -22,9 +22,9 @@
             <a href="#" class="btn tab-content-button">XEM CHI TIẾT</a>
         </div>
     </div>
-    <div id="menu2" class="tab-pane fade">
+    <div id="tab3" class="tab-pane fade">
         <div class="col-md-6 col-lg-6 col-xl-6">
-            <img src="{{ asset('images/test 2.jpg') }}" alt="">
+            <img src="{{ asset('images/slider_03.png') }}" alt="">
         </div>
         <div class="col-md-6 col-lg-6 col-xl-6">
             <h3 class="tab-content-title">Thi công Quảng Cáo</h3>
@@ -33,9 +33,9 @@
             <a href="#" class="btn tab-content-button">XEM CHI TIẾT</a>
         </div>
     </div>
-    <div id="menu3" class="tab-pane fade">
+    <div id="tab4" class="tab-pane fade">
         <div class="col-md-6 col-lg-6 col-xl-6">
-            <img src="{{ asset('images/test 5.jpg') }}" alt="">
+            <img src="{{ asset('images/slider_04.png') }}" alt="">
         </div>
         <div class="col-md-6 col-lg-6 col-xl-6">
             <h3 class="tab-content-title">Thiết kế Website</h3>
@@ -44,9 +44,9 @@
             <a href="#" class="btn tab-content-button">XEM CHI TIẾT</a>
         </div>
     </div>
-    <div id="menu4" class="tab-pane fade">
+    <div id="tab5" class="tab-pane fade">
         <div class="col-md-6 col-lg-6 col-xl-6">
-            <img src="{{ asset('images/test 1.jpg') }}" alt="">
+            <img src="{{ asset('images/slider_05.png') }}" alt="">
         </div>
         <div class="col-md-6 col-lg-6 col-xl-6">
             <h3 class="tab-content-title">Thiết kế nội thất</h3>
@@ -59,31 +59,31 @@
 
 <ul class="nav nav-tabs row">
     <li class="active">
-        <a data-toggle="tab" href="#home">
+        <a data-toggle="tab" href="#tab1">
             <span class="tab-title">Thiết kế quảng cáo</span>
             <p class="tab-text">Thiết kế logo, nhận diện thương hiệu, brochure, leaflet, banner...</p>
         </a>
     </li>
     <li>
-        <a data-toggle="tab" href="#menu1">
+        <a data-toggle="tab" href="#tab2">
             <span class="tab-title">In ấn mọi chất liệu</span>
             <p class="tab-text">Hiflex, decal, pp, giấy, ảnh...</p>
         </a>
     </li>
     <li>
-        <a data-toggle="tab" href="#menu2">
+        <a data-toggle="tab" href="#tab3">
             <span class="tab-title">Thi công quảng cáo</span>
             <p class="tab-text">Bảng hiệu, hộp đèn, đèn led, chữ nổi, showroom, quán cafe...</p>
         </a>
     </li>
     <li>
-        <a data-toggle="tab" href="#menu3">
+        <a data-toggle="tab" href="#tab4">
             <span class="tab-title">Thiết kế Website</span>
             <p class="tab-text">Web công ty, web bán hàng, web thương mại điện tử...</p>
         </a>
     </li>
     <li>
-        <a data-toggle="tab" href="#menu4">
+        <a data-toggle="tab" href="#tab5">
             <span class="tab-title">Thiết kế nội thất</span>
             <p class="tab-text">Nhà ở, chung cư, quán cafe...</p>
         </a>

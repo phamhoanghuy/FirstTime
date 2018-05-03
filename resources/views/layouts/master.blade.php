@@ -19,6 +19,7 @@
     <link href="{{ asset('css/prettyPhoto.css') }}" rel="stylesheet" type="text/css" >
     <link href="{{ asset('css/sm-clean.css') }}" rel="stylesheet" type="text/css" >
     <link href="{{ asset('css/animate.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ asset('css/hover.css') }}" rel="stylesheet" type="text/css" >
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" >
     @yield('header')
 </head>
@@ -32,7 +33,7 @@
 <!-- //Content -->
 
 <!-- Partials footer -->
-{{--@include('partials.footer')--}}
+@include('partials.footer')
 <!-- Scripts footer -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="{{ URL::to('//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js') }}"></script>

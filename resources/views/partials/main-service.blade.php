@@ -8,7 +8,7 @@
     <div class="service-items col-md-12 col-lg-12 col-xs-12">
         <div class="service-item col-md-4 col-lg-4 col-xs-4">
             <div class="col-md-12 col-lg-12 col-xs-12">
-                <img class="service-item-icon" src="{{ URL::to('images/service-icon-1.jpg') }}" alt="">
+                <a href="#"><img class="service-item-icon hvr-float-shadow" src="{{ URL::to('images/service-icon-1.png') }}" alt=""></a>
             </div>
             <div class="col-md-12 col-lg-12 col-xs-12">
                 <p class="service-item-title">THIẾT KẾ</p>
@@ -20,7 +20,7 @@
         </div>
         <div class="service-item col-md-4 col-lg-4 col-xs-4">
             <div class="col-md-12 col-lg-12 col-xs-12">
-                <img class="service-item-icon" src="{{ URL::to('images/service-icon-2.jpg') }}" alt="">
+                <img class="service-item-icon hvr-float-shadow" src="{{ URL::to('images/service-icon-2.png') }}" alt="">
             </div>
             <div class="col-md-12 col-lg-12 col-xs-12">
                 <p class="service-item-title">IN ẤN</p>
@@ -32,7 +32,7 @@
         </div>
         <div class="service-item col-md-4 col-lg-4 col-xs-4">
             <div class="col-md-12 col-lg-12 col-xs-12">
-                <img class="service-item-icon" src="{{ URL::to('images/service-icon-2.jpg') }}" alt="">
+                <img class="service-item-icon hvr-float-shadow" src="{{ URL::to('images/service-icon-3.png') }}" alt="">
             </div>
             <div class="col-md-12 col-lg-12 col-xs-12">
                 <p class="service-item-title">THI CÔNG</p>

@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'Clients\HomeController@home')->name('home');
+Route::get('/post', 'Clients\PostController@showPost')->name('post');

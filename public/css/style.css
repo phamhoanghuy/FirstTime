@@ -1,3 +1,4 @@
+@import url('../fonts/vni-helve/Vnihelve.ttf');
 body
 {
     font-family: 'Arial', sans-serif;
@@ -78,13 +79,31 @@ body a:hover
 {
     margin: 0 auto;
     text-align: center;
+    -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+}
+#header-main-menu .logo, #header-main-menu .hotline {
+    position: absolute;
+    top: 0;
+}
+#header-main-menu .logo {
+    margin-top: 3px;
+    height: 90%;
+    left: 0;
+    margin-left: 5%;
+}
+#header-main-menu .hotline {
+    margin-top: 5px;
+    height: 80%;
+    right: 0;
+    margin-right: 5%;
 }
 
 .main-menu.sm-clean
 {
     background-color: transparent;
 }
-
 .main-menu.sm-clean a
 {
     font-size: 13px;
@@ -92,7 +111,6 @@ body a:hover
     color: #000;
     font-weight: bold;
     transition: color .2s linear;
-    text-transform: uppercase;
     letter-spacing: 0.03cm;
 }
 
@@ -109,13 +127,13 @@ body a:hover
 
 .main-menu.sm-clean a:hover
 {
-    background-color: #000;
+    background-color: #ec1d23;
     color: #fff !important;
 }
 
 .sm-clean li.active a
 {
-    background-color: #000;
+    background-color: #ec1d23;
     color: #fff !important;
 }
 
@@ -627,175 +645,6 @@ div.pp_default .pp_loaderIcon
 }
 
 /* END ABOUT SECTION */
-
-
-/* NEWS SECTION */
-
-#news
-{
-    background-color: rgb(34, 28, 90);
-    background-image: url("demo-images/background_img_04.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    z-index: 6;
-}
-
-.blog-item-holder
-{
-    padding: 35px 0;
-    border-bottom: 2px solid #f4f4f4;
-}
-
-.blog-item-holder:last-of-type
-{
-    border: none;
-}
-
-.blog-item-holder .num
-{
-    display: inline-block;
-    width: 110px;
-    font-size: 48px;
-    font-weight: 900;
-    color: #32db89;
-}
-
-.blog-item-holder .info
-{
-    display: inline-block;
-    width: 235px;
-}
-
-.blog-item-holder .info .cat-links a
-{
-    color: #ee87a4;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.blog-item-holder .entry-title
-{
-    display: inline-block;
-    width: 325px;
-    padding: 0;
-    vertical-align: top;
-    line-height: 0;
-}
-
-.blog-holder .entry-title a
-{
-    -webkit-transition: color 0.5s ease;
-    -moz-transition: color 0.5s ease;
-    -ms-transition: color 0.5s ease;
-    -o-transition: color 0.5s ease;
-    transition: color 0.5s ease;
-    font-size: 18px;
-    line-height: 100%;
-    font-weight: 700;
-    display: block;
-    line-height: 20px;
-}
-
-.latest-post-bottom-text
-{
-    text-align: center;
-    margin-top: 25px;
-}
-
-.latest-post-bottom-text a
-{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 100%;
-    color: #32db89;
-    letter-spacing: 5px;
-    border-bottom: 2px solid;
-    padding-left: 5px;
-    padding-bottom: 5px;
-}
-
-.testimonial-slider-holder
-{
-    max-width: 500px;
-    padding-left: 50px;
-}
-
-.testimonial-text
-{
-    font-size: 22px;
-    line-height: 40px;
-}
-
-.testimonial-author
-{
-    padding-top: 90px;
-    font-size: 16px;
-    letter-spacing: 3px;
-}
-
-/* END NEWS SECTION */
-
-
-
-/* VIDEO SECTION */
-
-#video
-{
-    background-color: rgb(34, 28, 90);
-    background-image: url("demo-images/background_img_06.jpg");
-    background-repeat: repeat-x;
-    background-position: center center;
-    background-size: auto;
-    z-index: 5;
-}
-
-#video .section-title-holder
-{
-    background-color: rgb(255, 186, 66);
-}
-
-#video .section-title-holder span
-{
-    color: #e3a436;
-}
-
-#video .section-content-holder
-{
-    padding-bottom: 0;
-}
-
-a.video-popup-holder
-{
-    position: relative;
-    display: block;
-}
-
-a.video-popup-holder .thumb
-{
-    width: 100%;
-}
-
-img.popup-play
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    top: calc(50% - 60px);
-    left: calc(50% - 60px);
-    opacity: 0.7;
-    transition: opacity .2s linear;
-}
-
-a.video-popup-holder:hover img.popup-play
-{
-    opacity: 1;
-}
-/* END VIDEO SECTION */
-
-
 
 
 
@@ -1599,7 +1448,6 @@ footer
         float: none;
         margin: 0 auto;
         text-align: center;
-        max-width: 300px;
         width: 100%;
         position: relative;
         z-index: 9999;
@@ -1707,13 +1555,53 @@ footer
     font-weight: bold;
 }
 #footer {
+    color: #fff;
+    background-color: #ec1d23;
     clear: both;
     position: relative;
     z-index: 10;
-    height: 3em;
-    margin-top: -3em;
+    height: auto;
 }
-
+#footer .container{
+    padding: 2% 0 4% 0;
+}
+#footer .info, #footer .menu, #footer .extra, #footer .social{
+    padding: 0;
+}
+#footer .info li{
+    font-size: 13px;
+    font-weight: bold;
+}
+#footer .menu {
+    padding-left: 5%;
+}
+#footer .menu a {
+    color: #fff;
+    font-size: 13px;
+}
+#footer .extra span{
+    font-size: 13px;
+}
+#footer .extra input{
+    font-size: 13px;
+    padding: 10px;
+    height: 35px;
+    width: 200px;
+    color: #000;
+}
+#footer .extra button{
+    height: 35px;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    background-color: #ee3138;
+}
+#footer .social{
+    padding-top: 2%;
+}
+#slider .tab-content img {
+    padding-top: 5%;
+}
 #slider .tab-content-title {
     line-height: 1;
     font-weight: bold;
@@ -1751,7 +1639,7 @@ footer
 }
 .tab-content-content {
     text-align: justify;
-    font-size: 20px;
+    font-size: 16px;
 }
 .tab-content-button {
     margin-top: 5%;
@@ -1772,6 +1660,9 @@ footer
 #intro {
     padding: 2%;
     background-color: #ec1d23;
+}
+#intro img {
+    padding-top: 5%;
 }
 .intro-title {
     color: #fff;
@@ -1815,8 +1706,15 @@ footer
 }
 .service-item-icon {
     margin-left: 22%;
+    margin-bottom: 1%;
     width: 180px;
     height: 180px;
+}
+.service-item-icon:hover{
+    border: 4px dashed grey;
+    border-radius: 100%;
+    transition: all 0.2s ease-in-out;
+    background: radial-gradient(#000, #fff);
 }
 .service-item-title {
     font-weight: bold;
@@ -1828,11 +1726,16 @@ footer
 }
 
 #product {
-
+    margin: 0 10%;
+    border-spacing: 0 5px;
 }
 .product-item {
+    border: 1px solid #f3f3f3;
     padding-bottom: 2%;
     margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 23%;
 }
 .product-img {
     width: 100%;
@@ -1841,4 +1744,139 @@ footer
 }
 .product-description{
     text-align: center;
+    font-size: 12px;
+}
+
+#extra {
+    margin-top: 35%;
+    padding: 0 5%;
+}
+#news {
+
+}
+#video {
+
+}
+.news-header {
+    padding: 0;
+    margin-bottom: 3%;
+    margin-left: 2%;
+}
+.news-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.news-item {
+    padding: 0;
+    margin-bottom: 3%;
+}
+.news-img {
+    padding: 0 2%;
+    width: 40%;
+}
+.news-img img{
+    width: 100%;
+}
+.news-content {
+    width: 60%;
+}
+.news-content-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+.news-content-content {
+    display: flex;
+    font-size: 13px;
+}
+.news-content-link {
+    font-size: 13px;
+    color: #ec1d23;
+}
+
+.video-header {
+    padding: 0;
+    margin-bottom: 3%;
+    margin-left: 2%;
+}
+.video-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.video-item {
+    padding: 0;
+    margin-bottom: 3%;
+}
+.video-img {
+    width: 200px;
+    height: 150px;
+}
+.video-content {
+    padding: 0;
+    margin-left: -5%;
+}
+.video-content iframe {
+    margin-left: 7%;
+    width: 90%;
+}
+.video-content-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+.video-content-content {
+    display: flex;
+    font-size: 13px;
+}
+.video-content-link {
+    font-size: 13px;
+    color: blue;
+}
+.border-bottom-section {
+    width: 15%;
+    border-bottom: 2px solid #fe0001;
+    position: relative;
+}
+.border-bottom-section-overlay {
+    width: 90%;
+    border-bottom: 2px solid #000;
+    position: absolute;
+}
+#partners {
+    padding: 0 5%;
+}
+.carousel-inner, .item {
+    height: 100px;
+}
+.carousel-inner .item {
+    padding: 0 5%;
+}
+.carousel-control {
+    width: 5%;
+    padding-top: 3%;
+    background-color: transparent;
+}
+
+.tab-content{
+    margin-top: 70px;
+    margin-bottom: 118px;
+}
+#tab1 img{
+
+}
+#tab2 img{
+    margin-top: -78px;
+}
+#tab3 img{
+
+}
+#tab4 img{
+
+}
+#tab5 img{
+
+}
+.extra button {
+    background-color: rgba(236,29,35,0.09);
+}
+.well {
+    background-color: #fff;
 }

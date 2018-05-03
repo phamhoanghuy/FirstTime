@@ -22,9 +22,21 @@
         @include('partials.main-service')
     </div>
     <!-- Product -->
-    <div id="product" class="container">
+    <div id="product">
         @include('partials.lists.main-product')
     </div>
+    <!-- Extra: News and Video -->
+    <div id="extra">
+        <!-- News -->
+        <div id="news" class="col-md-6 col-lg-6 col-xs-6">
+            @include('partials.lists.main-news')
+        </div>
+        <!-- Video -->
+        <div id="video" class="col-md-6 col-lg-6 col-xs-6">
+            @include('partials.lists.main-video')
+        </div>
+    </div>
+
     {{--<div id="services">
         <div class="block content-1170 center-relative">
             <div class="section-title-holder left">
@@ -628,14 +640,14 @@
             <div class="clear"></div>
         </div>
     </div>--}}
+
 @endsection
 
 @section('footer')
+
     <script>
         $(document).ready(function(){
-            $(".nav-tabs a").click(function(){
-                /*$(this).tab('show');*/
-            });
+
         });
     </script>
 @endsection
