@@ -28,6 +28,8 @@
 @include('partials.header')
 <!-- //Partials header -->
 
+<!-- Breadcrumbs -->
+@include('partials.breadcrumb')
 <!-- Content -->
 @yield('content')
 <!-- //Content -->

@@ -2,7 +2,6 @@
     <p class="news-title">
         TIN TỨC - SỰ KIỆN
     </p>
-    <div class="border-bottom-section"></div>
     <div class="border-bottom-section-overlay"></div>
 </div>
 @for($i = 0; $i < 4; $i++)

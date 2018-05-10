@@ -2,7 +2,6 @@
     <p class="video-title">
         VIDEO - CLIP
     </p>
-    <div class="border-bottom-section"></div>
     <div class="border-bottom-section-overlay"></div>
 </div>
 <div class="video-content">

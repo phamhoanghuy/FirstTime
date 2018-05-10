@@ -16,6 +16,7 @@ class HomeController extends Controller
      */
     public function home()
     {
-        return view('index');
+        $pageTitle = 'Trang chủ';
+        return view('index', ['pageTitle' => $pageTitle]);
     }
 }

@@ -1,8 +1,8 @@
 <div class="row">
-    <div class="col-md-6 col-lg-6 col-xs-6">
+    <div class="intro-left col-md-6 col-lg-6 col-xs-6">
         <img src="{{ URL::to('images/intro.png') }}" alt="">
     </div>
-    <div class="col-md-6 col-lg-6 col-xs-6">
+    <div class="intro-right col-md-6 col-lg-6 col-xs-6">
         <span class="intro-title">GIỚI THIỆU CÔNG TY LỘC MÃ</span>
         <p class="intro-content">
             Công ty TNHH TMDV Quảng Cáo Lộc Mã là công ty chuyên về thiết kế, in ấn, thi công quảng cáo.<br>

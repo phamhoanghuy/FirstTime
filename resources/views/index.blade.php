@@ -1,4 +1,7 @@
 @extends('layouts.master')
+@section('pageTitle')
+    Trang chủ
+@endsection
 @section('content')
     {{--<!-- Preloader Gif -->
     <table class="doc-loader">
@@ -28,11 +31,11 @@
     <!-- Extra: News and Video -->
     <div id="extra">
         <!-- News -->
-        <div id="news" class="col-md-6 col-lg-6 col-xs-6">
+        <div id="news" class="col-md-6 col-lg-6 col-xs-6 col-sm-6 col-6">
             @include('partials.lists.main-news')
         </div>
         <!-- Video -->
-        <div id="video" class="col-md-6 col-lg-6 col-xs-6">
+        <div id="video" class="col-md-6 col-lg-6 col-xs-6 col-sm-6 col-6">
             @include('partials.lists.main-video')
         </div>
     </div>
@@ -647,7 +650,14 @@
 
     <script>
         $(document).ready(function(){
+            var sourceSwap = function () {
+                var $this = $(this);
+                var newSource = $this.data('alt-src');
+                $this.data('alt-src', $this.attr('src'));
+                $this.attr('src', newSource);
+            };
 
+            $('.service-item-icon').hover(sourceSwap, sourceSwap);
         });
     </script>
 @endsection
