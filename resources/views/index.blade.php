@@ -1,7 +1,5 @@
 @extends('layouts.master')
-@section('pageTitle')
-    Trang chủ
-@endsection
+@section('pageTitle'){{ $pageTitle }}@endsection
 @section('content')
     {{--<!-- Preloader Gif -->
     <table class="doc-loader">

@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('pageTitle'){{ $pageTitle }}@endsection
 @section('content')
     <div class="container">
         <div class="post-detail col-md-12 col-sm-12 col-12">
