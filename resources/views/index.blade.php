@@ -656,19 +656,56 @@
             };
 
             $('.service-item-icon').hover(sourceSwap, sourceSwap);
-            $('.service-item-icon').hover(function () {
-                /*$('#product').empty();
-                var productItems =
-
-                <div class="product-item col-md-2 col-lg-2 col-xs-2">
-                    <div class="col-md-12 col-lg-12 col-xs-12">
-                    <img class="product-img" src="{{ URL::to('images/product.jpg') }}" alt="">
-                    </div>
-                    <div class="col-md-12 col-lg-12 col-xs-12">
-                    <p class="product-description">THẢM EH-M0002</p>
-                </div>
-                </div>
-                $('#product').insert();*/
+            $('#design img').hover(function () {
+                $('#product').empty();
+                var productItems = [1,2,3,4,5,6,7,8];
+                var productNode = '';
+                for (var i = 0; i < productItems.length; i++){
+                    //console.log(i);
+                    productNode += '<div class="product-item col-md-2 col-lg-2 col-xs-2">'
+                        + '<div class="col-md-12 col-lg-12 col-xs-12">'
+                        + '<img class="product-img" src="images/product-img-1.jpg" alt="">'
+                        + '</div>'
+                        + '<div class="col-md-12 col-lg-12 col-xs-12">'
+                        + '<p class="product-description">THẢM EH-M0002</p>'
+                        + '</div>'
+                        + '</div>';
+                }
+                $('#product').append(productNode);
+            });
+            $('#printing img').hover(function () {
+                $('#product').empty();
+                var productItems = [1,2,3,4,5,6,7,8];
+                var productNode = '';
+                for (var i = 0; i < productItems.length; i++){
+                    //console.log(i);
+                    productNode += '<div class="product-item col-md-2 col-lg-2 col-xs-2">'
+                        + '<div class="col-md-12 col-lg-12 col-xs-12">'
+                        + '<img class="product-img" src="images/product-img-2.jpg" alt="">'
+                        + '</div>'
+                        + '<div class="col-md-12 col-lg-12 col-xs-12">'
+                        + '<p class="product-description">THẢM EH-M0002</p>'
+                        + '</div>'
+                        + '</div>';
+                }
+                $('#product').append(productNode);
+            });
+            $('#construction img').hover(function () {
+                $('#product').empty();
+                var productItems = [1,2,3,4,5,6,7,8];
+                var productNode = '';
+                for (var i = 0; i < productItems.length; i++){
+                    //console.log(i);
+                    productNode += '<div class="product-item col-md-2 col-lg-2 col-xs-2">'
+                        + '<div class="col-md-12 col-lg-12 col-xs-12">'
+                        + '<img class="product-img" src="images/product-img-3.jpg" alt="">'
+                        + '</div>'
+                        + '<div class="col-md-12 col-lg-12 col-xs-12">'
+                        + '<p class="product-description">THẢM EH-M0002</p>'
+                        + '</div>'
+                        + '</div>';
+                }
+                $('#product').append(productNode);
             });
         });
     </script>

@@ -6,9 +6,9 @@
         </p>
     </div>
     <div class="service-items col-md-12 col-lg-12 col-xs-12">
-        <div class="service-item col-md-4 col-lg-4 col-xs-4">
+        <div id="design" class="service-item col-md-4 col-lg-4 col-xs-4">
             <div class="col-md-12 col-lg-12 col-xs-12">
-                <a href="#"><img class="service-item-icon hvr-float-shadow" data-alt-src="{{ URL::to('images/service-icon-1_hover.png') }}"
+                <a href="{{ route('post', ['type' => 'thiet-ke']) }}"><img class="service-item-icon hvr-float-shadow" data-alt-src="{{ URL::to('images/service-icon-1_hover.png') }}"
                                  src="{{ URL::to('images/service-icon-1.png') }}" alt=""></a>
             </div>
             <div class="col-md-12 col-lg-12 col-xs-12">
@@ -19,9 +19,9 @@
                 <p class="service-item-content">Thiết kế các sản phẩm...</p>
             </div>
         </div>
-        <div class="service-item col-md-4 col-lg-4 col-xs-4">
+        <div id="printing" class="service-item col-md-4 col-lg-4 col-xs-4">
             <div class="col-md-12 col-lg-12 col-xs-12">
-                <a href="#"><img class="service-item-icon hvr-float-shadow" data-alt-src="{{ URL::to('images/service-icon-2_hover.png') }}"
+                <a href="{{ route('post', ['type' => 'in-an']) }}"><img class="service-item-icon hvr-float-shadow" data-alt-src="{{ URL::to('images/service-icon-2_hover.png') }}"
                                  src="{{ URL::to('images/service-icon-2.png') }}" alt=""></a>
             </div>
             <div class="col-md-12 col-lg-12 col-xs-12">
@@ -32,9 +32,9 @@
                 <p class="service-item-content">In ấn trên các chất liệu...</p>
             </div>
         </div>
-        <div class="service-item col-md-4 col-lg-4 col-xs-4">
+        <div id="construction" class="service-item col-md-4 col-lg-4 col-xs-4">
             <div class="col-md-12 col-lg-12 col-xs-12">
-                <a href="#"><img class="service-item-icon hvr-float-shadow" data-alt-src="{{ URL::to('images/service-icon-3_hover.png') }}"
+                <a href="{{ route('post', ['type' => 'thi-cong']) }}"><img class="service-item-icon hvr-float-shadow" data-alt-src="{{ URL::to('images/service-icon-3_hover.png') }}"
                                  src="{{ URL::to('images/service-icon-3.png') }}" alt=""></a>
             </div>
             <div class="col-md-12 col-lg-12 col-xs-12">
