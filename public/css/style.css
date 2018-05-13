@@ -1431,6 +1431,9 @@ footer
 .post-detail-content p {
     margin-top: 5%;
 }
+.quotation h1 {
+    font-weight: bolder;
+}
 @media screen and (max-width: 1270px) {
 
     .content-1170
@@ -2045,4 +2048,25 @@ footer
     {
         top: -84px;
     }
+}
+
+@media screen and (min-height: 730px){
+    #slider {
+        margin-top: 7.1%;
+    }
+    #slider .nav-tabs {
+        margin-top: 7.1%;
+    }
+    .post-detail-img img {
+        width: 40%;
+        height: 400px;
+        margin-left: 30%;
+    }
+    .post-detail-content h6 {
+        padding: 5% 15%;
+    }
+    .quotation div {
+        margin-bottom: 1%;
+    }
+
 }

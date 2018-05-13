@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('pageTitle'){{ $pageTitle }}@endsection
 @section('content')
-    <div class="container">
+    <div class="container quotation">
         <h1 class="text-center">Bảng báo giá</h1>
         <div class="col-md-12 col-sm-12 col-12 margin-bottom-40">
             <div class="col-md-3 col-sm-3 col-3"></div>
