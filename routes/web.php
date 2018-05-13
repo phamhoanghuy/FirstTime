@@ -12,4 +12,11 @@
 */
 
 Route::get('/', 'Clients\HomeController@home')->name('home');
-Route::get('/post', 'Clients\PostController@showPost')->name('post');
+Route::get('/post/{type}', 'Clients\PostController@showPost')->name('post');
+
+Route::get('/test', 'Clients\HomeController@test')->name('test');
+Route::get('/contact', 'Clients\ContactController@showContactForm')->name('contact');
+Route::post('/contact', 'Clients\ContactController@sendContactForm')->name('contact.send');
+
+Route::get('/quotation', 'Clients\HomeController@showQuotation')->name('quotation');
+Route::get('/upload-files', 'Clients\HomeController@showUploadFilesForm')->name('upload_files');

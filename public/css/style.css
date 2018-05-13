@@ -1209,6 +1209,11 @@ footer
     font-weight: bold;
     text-align: center;
 }
+.service-item-title a {
+    background-color: #ec1d23;
+    border: 0;
+    color: #fff;
+}
 .service-item-content {
     text-align: center;
     font-size: 13px;

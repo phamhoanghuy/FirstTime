@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>@yield('pageTitle')</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="shortcut icon" href="{{ URL::to('images/icon-tab.jpg') }}" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900|Montserrat:400,700|PT+Serif' rel='stylesheet' type='text/css'>
     <!-- Library CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -21,6 +21,7 @@
     <link href="{{ asset('css/animate.css') }}" rel="stylesheet" type="text/css" >
     <link href="{{ asset('css/hover.css') }}" rel="stylesheet" type="text/css" >
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     @yield('header')
 </head>
 <body>
@@ -37,7 +38,6 @@
 <!-- Partials footer -->
 @include('partials.footer')
 <!-- Scripts footer -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="{{ URL::to('//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/jquery.smartmenus.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/isotope.pkgd.js') }}"></script>
