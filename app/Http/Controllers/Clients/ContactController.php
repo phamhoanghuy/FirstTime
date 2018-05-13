@@ -16,7 +16,7 @@ class ContactController extends Controller
      */
     public function showContactForm()
     {
-        $title = 'Liên hệ';
+        $title = 'Thông tin khách hàng';
         // Breadcrumb Ads Budget List && Header
         $this->push($title, '');
         $pageTitle = $title;

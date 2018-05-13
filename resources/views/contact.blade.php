@@ -15,11 +15,14 @@
                     <p class="name">
                         <input name="name" type="text" class="feedback-input" required placeholder="Tên" id="name" maxlength="40"/>
                     </p>
+                    <p class="phone">
+                        <input name="phone" type="text" required class="feedback-input" id="phone" placeholder="Số điện thoại" />
+                    </p>
                     <p class="email">
                         <input name="email" type="email" required class="feedback-input" id="email" placeholder="Địa chỉ email" />
                     </p>
                     <p class="text">
-                        <textarea name="message" class="feedback-input" id="comment" placeholder="Nội dung liên hệ"></textarea>
+                        <textarea name="message" class="feedback-input" id="comment" placeholder="Ghi chú"></textarea>
                     </p>
                     <div class="submit">
                         <button type="submit" class="button-blue">GỬI</button>
