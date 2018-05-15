@@ -3,39 +3,67 @@
     <!-- Use for AJAX (Token) -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- styles -->
-    <link href="{{ URL::to('css/jquery.fileuploader.css') }}" media="all" rel="stylesheet">
-    <link href="{{ URL::to('css/jquery.fileuploader-theme-dragdrop.css') }}" media="all" rel="stylesheet">
+    <link href="{{ URL::to('css/form.css') }}" rel="stylesheet">
     <!-- js -->
     <script src="{{ URL::to('js/jquery.fileuploader.min.js') }}" type="text/javascript"></script>
-    <style>
-        #uploadFilesForm {
-            font-family: 'Roboto', sans-serif;
-            font-size: 14px;
-            line-height: normal;
-            color: #47525d;
-            background-color: #fff;
-
-            margin: 0;
-            padding: 20px;
-
-            width: 560px;
-        }
-    </style>
 @endsection
 @section('pageTitle'){{ $pageTitle }}@endsection
 @section('content')
-    <div class="container">
-        <form id="uploadFilesForm" action=" " method="post" enctype="multipart/form-data">
-            <input type="file" name="test">
-            <button id="btnSubmit" type="button" class="btn btn-primary">Gửi</button>
-        </form>
+    <div id="upload" class="container">
+        <div class="col-md-12 col-sm-12 col-12">
+            <h6 class="col-md-6 col-sm-6 col-6">Bước 1: Tải lên file cần in</h6>
+            <h6 class="col-md-6 col-sm-6 col-6">Bước 2: Nhập thông tin khách hàng</h6>
+        </div>
+        <div class="col-md-12 col-sm-12 col-12">
+            <form id="uploadFilesForm" class="col-md-6 col-sm-6 col-6" action=" " method="post" enctype="multipart/form-data">
+                <input type="file" name="test">
+                {{--<button id="btnSubmit" type="button" class="btn btn-primary">Gửi</button>--}}
+            </form>
+            <div class="col-md-6 col-sm-6 col-6">
+                <div id="form-main">
+                    {{--<h1 class="text-center" class="col-md-12 col-sm-12 col-12">Thông tin khách hàng</h1>--}}
+                    <div id="form-div" class="col-md-12 col-sm-12 col-12">
+                        <form class="montform" id="reused_form" >
+                            <p class="name">
+                                <input name="name" type="text" class="feedback-input" required placeholder="Tên" id="name" maxlength="40"/>
+                            </p>
+                            <p class="phone">
+                                <input name="phone" type="text" required class="feedback-input" id="phone" placeholder="Số điện thoại" />
+                            </p>
+                            <p class="email">
+                                <input name="email" type="email" required class="feedback-input" id="email" placeholder="Địa chỉ email" />
+                            </p>
+                            <p class="text">
+                                <textarea name="message" class="feedback-input" id="comment" placeholder="Ghi chú"></textarea>
+                            </p>
+                            <div class="submit">
+                                <button type="submit" class="button-blue">GỬI</button>
+                                <div class="ease"></div>
+                            </div>
+                        </form>
+                        <div id="error_message" style="width:100%; height:100%; display:none; ">
+                            <h4>
+                                Lỗi gửi liên hệ!
+                            </h4>
+                            Có một lỗi xảy ra trong quá trình gửi liên hệ. Vui lòng thử lại!
+                        </div>
+                        <div id="success_message" style="width:100%; height:100%; display:none; ">
+                            <h1 class="text-center">Thành công!</h1>
+                            <p style="text-align: center;">Thông tin liên hệ của bạn đã được gửi đi.<br>Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection
 @section('footer')
     <script>
+        var routerContactForm = '{{ route('contact.send') }}';
+
         $(document).ready(function() {
             var input = $('input[name="test"]');    // name of "input" field here!
-            var btnSubmit = $('#btnSubmit');        // button Submit form
+            var btnSubmit = $('.submit button');    // button Submit form
 
             uploadfiles(input);
             btnSubmit.click(function () {
@@ -205,4 +233,5 @@
             }
         });
     </script>
+    <script type="text/javascript" src="{{ asset('js/form.js') }}"></script>
 @endsection

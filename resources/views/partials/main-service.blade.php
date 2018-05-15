@@ -12,7 +12,7 @@
                                  src="{{ URL::to('images/service-icon-1.png') }}" alt=""></a>
             </div>
             <div class="col-md-12 col-lg-12 col-xs-12">
-                <p class="service-item-title"><a href="{{ route('post', ['type' => 'thiet-ke']) }}" class="btn btn-default">THIẾT KẾ</a></p>
+                <p class="service-item-title">THIẾT KẾ</p>
                 <hr style="width: 35%; border-bottom: 1px solid #eee; margin-left: 33%">
             </div>
             <div class="service-item-content col-md-12 col-lg-12 col-xs-12">
@@ -25,7 +25,7 @@
                                  src="{{ URL::to('images/service-icon-2.png') }}" alt=""></a>
             </div>
             <div class="col-md-12 col-lg-12 col-xs-12">
-                <p class="service-item-title"><a href="{{ route('post', ['type' => 'in-an']) }}" class="btn btn-default">IN ẤN</a></p>
+                <p class="service-item-title">IN ẤN</p>
                 <hr style="width: 35%; border-bottom: 1px solid #eee; margin-left: 33%">
             </div>
             <div class="service-item-content col-md-12 col-lg-12 col-xs-12">
@@ -38,7 +38,7 @@
                                  src="{{ URL::to('images/service-icon-3.png') }}" alt=""></a>
             </div>
             <div class="col-md-12 col-lg-12 col-xs-12">
-                <p class="service-item-title"><a href="{{ route('post', ['type' => 'thi-cong']) }}" class="btn btn-default">THI CÔNG</a></p>
+                <p class="service-item-title">THI CÔNG</p>
                 <hr style="width: 35%; border-bottom: 1px solid #eee; margin-left: 33%">
             </div>
             <div class="service-item-content col-md-12 col-lg-12 col-xs-12">

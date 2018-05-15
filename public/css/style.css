@@ -1209,11 +1209,11 @@ footer
     font-weight: bold;
     text-align: center;
 }
-.service-item-title a {
+/*.service-item-title a {
     background-color: #ec1d23;
     border: 0;
     color: #fff;
-}
+}*/
 .service-item-content {
     text-align: center;
     font-size: 13px;
@@ -1434,6 +1434,26 @@ footer
 .quotation h1 {
     font-weight: bolder;
 }
+#upload {
+    margin-bottom: 5%;
+}
+#upload h6 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#uploadFilesForm {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    color: #47525d;
+    background-color: #fff;
+}
+/*.fileuploader-input-button {
+    background-color: #ec1d23;
+}
+.fileuploader-input-button:hover, .fileuploader-input-button:focus {
+    background-color: #fa1e24;
+}*/
 @media screen and (max-width: 1270px) {
 
     .content-1170

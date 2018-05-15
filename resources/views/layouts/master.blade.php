@@ -20,6 +20,8 @@
     <link href="{{ asset('css/sm-clean.css') }}" rel="stylesheet" type="text/css" >
     <link href="{{ asset('css/animate.css') }}" rel="stylesheet" type="text/css" >
     <link href="{{ asset('css/hover.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ URL::to('css/jquery.fileuploader.css') }}" media="all" rel="stylesheet">
+    <link href="{{ URL::to('css/jquery.fileuploader-theme-dragdrop.css') }}" media="all" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     @yield('header')

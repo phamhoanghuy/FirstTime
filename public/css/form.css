@@ -15,18 +15,14 @@ body
 }
 
 #form-main{
-	width:100%;
-	padding-top:0;
+	width: 70%;
+	padding-top: 15px;
 }
 
 #form-div {
 	background-color:rgba(72,72,72,0.4);
-	padding-left: 35px;
-	padding-right:35px;
-	padding-top:35px;
-	padding-bottom:35px;
-  	border-radius: 7px;
-  	margin-bottom: 5%;
+	padding: 15px;
+  	border-radius: 4px;
 }
 
 .montform .feedback-input {
@@ -81,6 +77,18 @@ body
 	background-size: 30px 30px;
   background-position: 11px 8px;
 	background-repeat: no-repeat;
+}
+
+.montform  #phone{
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-telephone.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+.montform  #phone:focus{
+	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-telephone.svg);
+
 }
 
 .montform  #comment{
