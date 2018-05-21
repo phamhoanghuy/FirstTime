@@ -10,9 +10,15 @@
         <li><a href="{{ route('post', ['type' => 'thi-cong']) }}">Thi công</a></li>
         <li><a href="{{ route('quotation') }}">Báo giá</a></li>
         <li><a href="{{ route('upload_files') }}">Gửi file</a></li>
-        <li><a href="#skills">Tuyển dụng</a></li>
-        <li><a href="{{ route('contact') }}">Liên hệ</a></li>
+        <li><a href="#recruit">Tuyển dụng</a></li>
+        <li><a href="#contact" onclick="scrollToBottom();">Liên hệ</a></li>
         <li class="hotline"><a href="{{ route('home') }}"><img src="{{ URL::to('images/hotline.png') }}" alt=""></a></li>
     </ul>
 
 </nav>
+<script>
+    function scrollToBottom() {
+        var height = $('body').get(0).scrollHeight;
+        $('html, body').animate({scrollTop: height}, 2000);
+    }
+</script>
