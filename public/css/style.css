@@ -1057,6 +1057,10 @@ footer
 #footer .info, #footer .menu, #footer .extra, #footer .social{
     padding: 0;
 }
+#footer .info .company{
+    font-size: 16px;
+    padding: 20px 0 0 0;
+}
 #footer .info li{
     font-size: 13px;
     font-weight: bold;
@@ -1973,7 +1977,6 @@ footer
     }
     .tab-pane img{
         margin-left: 0;
-        margin-top: -5%;
     }
     .tab-content-right {
         margin-left: 0;
@@ -1992,6 +1995,10 @@ footer
     .intro-right {
         width: 100%;
         text-align: center;
+    }
+    .service-item-icon{
+        width: 160px;
+        height: 160px;
     }
 
     .info, .menu, .extra, .social{
@@ -2038,6 +2045,7 @@ footer
     }
     .tab-pane img {
         max-width: 100%;
+        margin-top: 5%;
     }
     .carousel-control {
         margin-top: 100%;
