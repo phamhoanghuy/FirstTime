@@ -2017,7 +2017,9 @@ footer
 }
 
 @media screen and (max-width: 650px) {
-
+    #breadcrumb {
+        margin-top: 12%;
+    }
 
     .member-content-holder
     {
@@ -2046,6 +2048,9 @@ footer
 }
 
 @media screen and (max-width: 576px){
+    #breadcrumb {
+        margin-top: 17%;
+    }
     .tab-pane {
         display: flex;
     }
@@ -2063,7 +2068,9 @@ footer
 }
 
 @media screen and (max-width: 350px) {
-
+    #breadcrumb {
+        margin-top: 25%;
+    }
     .section-num
     {
         margin-top: 9px;
