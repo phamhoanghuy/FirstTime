@@ -1996,9 +1996,12 @@ footer
         width: 100%;
         text-align: center;
     }
+    .service-item{
+        width: 100%;
+        margin-bottom: 2%;
+    }
     .service-item-icon{
-        width: 160px;
-        height: 160px;
+        margin-left: 36.5%;
     }
 
     .info, .menu, .extra, .social{
@@ -2037,6 +2040,9 @@ footer
         margin-top: 100%;
         padding-top: 95%;
     }
+    .service-item-icon{
+        margin-left: 33%;
+    }
 }
 
 @media screen and (max-width: 576px){
@@ -2050,6 +2056,9 @@ footer
     .carousel-control {
         margin-top: 100%;
         padding-top: 100%;
+    }
+    .service-item-icon{
+        margin-left: 30%;
     }
 }
 
@@ -2075,6 +2084,9 @@ footer
     .image-slider-wrapper.service a.image_slider_next
     {
         top: -84px;
+    }
+    .service-item-icon{
+        margin-left: 14%;
     }
 }
 
